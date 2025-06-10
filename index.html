@@ -1,11 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/assets/css/style.css">
     <title>Formulário | Inscrição</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <div class="icone-lua-container">
+        <img class="icone-lua" src="./public/assets/images/moon-star 1.png" alt="Alternar tema escuro">
+    </div>
+    <div class="cabecalho">
+        <div class="titulo">
+            <h1>Inscrição nos cursos FIC</h1>
+        </div>
+        <p>Prazo para responder: <strong>05/05/2025</strong></p>
+    </div>
+    <form>
+        <div>
+            <label for="nome"><span>* </span>Nome:</label>
+            <input class="input-text" type="text" id="nome" placeholder="Digite seu nome...">
+        </div>
+        <div>
+            <label for="email"><span>* </span>E-mail:</label>
+            <input class="input-email" type="email" id="email" placeholder="Digite seu e-mail...">
+        </div>
+        <div>
+            <label><span>* </span>Sexo:</label>
+            <input class="input-radio" type="radio" name="sexo" id="sexo_masculino">
+            <label for="sexo_masculino">Masculino</label>
+            <input class="input-radio" type="radio" name="sexo" id="sexo_feminino">
+            <label for="sexo_feminino">Feminino</label>
+        </div>
+        <div>
+            <label for="cursos"><span>* </span>Curso:</label>
+            <select class="select" id="cursos">
+                <option value="0">Nenhum</option>
+                <option value="1">HTML e CSS</option>
+                <option value="2">Git e GitHub</option>
+                <option value="3">JavaScript</option>
+            </select>
+        </div>
+        <div>
+            <label for="descricao_pessoal">Descrição pessoal:</label> <br>
+            <textarea class="textarea" id="descricao_pessoal" placeholder="Digite sua descrição pessoal..."></textarea>
+        </div>
+        <div>
+            <input class="input-checkbox" type="checkbox" id="termos">
+            <label for="termos"><span>* </span>Li e estou de acordo com os <span class="tupp">Termos de Uso</span> e
+                <span class="tupp">Política de Privacidade</span></label>
+        </div>
+        <p class="aviso">Os campos marcados com <span>*</span> são obrigatórios</p>
+        <input class="input-submit" type="submit" value="Inscrever-se">
+    </form>
+
     <script type="module" src="/src/main.ts"></script>
-  </body>
+</body>
+
 </html>
