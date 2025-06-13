@@ -12,12 +12,14 @@
     <div class="icone-lua-container">
         <img class="icone-lua" src="./public/assets/images/moon-star 1.png" alt="Alternar tema escuro">
     </div>
-    <div class="cabecalho">
-        <div class="titulo">
-            <h1>Inscrição nos cursos FIC</h1>
+    <header>
+        <div class="cabecalho">
+            <div class="titulo">
+                <h1>Inscrição nos cursos FIC</h1>
+            </div>
+            <p>Prazo para responder: <strong>05/05/2025</strong></p>
         </div>
-        <p>Prazo para responder: <strong>05/05/2025</strong></p>
-    </div>
+    </header>
     <form>
         <div>
             <label for="nome"><span>* </span>Nome:</label>
@@ -29,9 +31,9 @@
         </div>
         <div>
             <label><span>* </span>Sexo:</label>
-            <input class="input-radio" type="radio" name="sexo" id="sexo_masculino">
+            <input class="input-radio" type="radio" name="sexo-masculino" id="sexo-masculino">
             <label for="sexo_masculino">Masculino</label>
-            <input class="input-radio" type="radio" name="sexo" id="sexo_feminino">
+            <input class="input-radio" type="radio" name="sexo-feminino" id="sexo-feminino">
             <label for="sexo_feminino">Feminino</label>
         </div>
         <div>
@@ -45,7 +47,7 @@
         </div>
         <div>
             <label for="descricao_pessoal">Descrição pessoal:</label> <br>
-            <textarea class="textarea" id="descricao_pessoal" placeholder="Digite sua descrição pessoal..."></textarea>
+            <textarea class="textarea" id="descricao-pessoal" placeholder="Digite sua descrição pessoal..."></textarea>
         </div>
         <div>
             <input class="input-checkbox" type="checkbox" id="termos">
@@ -53,7 +55,7 @@
                 <span class="tupp">Política de Privacidade</span></label>
         </div>
         <p class="aviso">Os campos marcados com <span>*</span> são obrigatórios</p>
-        <input class="input-submit" type="submit" value="Inscrever-se">
+        <input class="input-submit" id="enviar" type="submit" value="Inscrever-se">
     </form>
 
     <script type="module" src="/src/main.ts"></script>
