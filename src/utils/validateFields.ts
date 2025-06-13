@@ -1,13 +1,8 @@
 import type { Usuario } from '../models/Usuario'
-import { v4 as uuid } from 'uuid'
+import { UsuarioSchema } from './validators/schemas/zod/UsuarioSchema'
 
-export async function validateFields(nome: String, email: String, sexo: String, curso: String, termos: String) {
-    const usuario: Usuario = {
-        id: uuid(),
-        nome: nome,
-        email: email,
-        sexo: sexo,
-        curso: curso,
-        termos: termos
-    } 
+export async function validateFields(usuario: Usuario) {
+    const parsedData = UsuarioSchema.parseAsync(usuario)
+
+    return parsedData
 }
