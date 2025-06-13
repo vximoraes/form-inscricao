@@ -1,9 +1,9 @@
 export interface Usuario {
-    id: String,
-    nome: String,
-    email: String,
-    sexo: String,
-    curso: String,
-    descricao?: String,
-    termos: String
+    id?: string,
+    nome: string,
+    email: string,
+    sexo: string,
+    curso: string,
+    descricao?: string,
+    termo: boolean
 }
