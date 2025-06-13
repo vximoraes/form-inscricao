@@ -1,11 +1,4 @@
 @media (max-width: 900px) {
-    .cabecalho,
-    form {
-        max-width: 100%;
-        padding-left: 2vw !important;
-        padding-right: 2vw !important;
-    }
-
     .titulo {
         gap: 32px;
         flex-wrap: wrap;
@@ -24,20 +17,8 @@
         box-sizing: border-box;
     }
 
-    .titulo {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
-
     .titulo h1 {
         font-size: 1.2rem;
-        text-align: left;
-        white-space: normal;
-    }
-
-    .titulo img {
-        height: 18px;
     }
 
     label,
