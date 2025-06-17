@@ -1,6 +1,6 @@
 import '../public/assets/css/style.css'
 import { criarUsuario } from './api/usuarioApi'
-import { toggleDarkMode } from './utils/theme'
+import { initTheme, toggleDarkMode } from './utils/theme'
 import { validateFields } from './utils/validateFields'    
 import type { Usuario } from './models/Usuario'
 import { v4 as uuid } from 'uuid'
@@ -16,7 +16,11 @@ const descricao = document.querySelector<HTMLTextAreaElement>('#descricao-pessoa
 const termos = document.querySelector<HTMLInputElement>('#termos')!
 const enviar = document.querySelector<HTMLInputElement>('#enviar')!
 
-toggleDarkMode()
+initTheme();
+const iconeLua = document.querySelector('.icone-lua');
+if (iconeLua) {
+    iconeLua.addEventListener('click', toggleDarkMode);
+}
 
 enviar.addEventListener('click', async (event) => {
     event.preventDefault()
