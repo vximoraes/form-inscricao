@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Inscritos</title>
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" href="./public/assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./public/assets/css/formulario.css">
+    <link rel="stylesheet" href="./public/assets/css/responsivo.css">
+    <link rel="stylesheet" href="./public/assets/css/darkmode.css">
+    <link rel="stylesheet" href="./public/assets/css/tabela-inscritos.css">
+</head>
+<body>
+    <nav class="nav-topo">
+        <div class="nav-links-group">
+            <a href="index.html" class="nav-link">Formulário</a>
+            <a href="lista-inscritos.html" class="nav-link ativo">Inscritos</a>
+        </div>
+    </nav>
+    <div class="icone-lua-container">
+        <img class="icone-lua" src="./public/assets/images/moon-star 1.png" alt="Alternar tema escuro">
+    </div>
+    <header>
+        <div class="cabecalho">
+            <div class="titulo">
+                <h1>Inscritos nos cursos FIC</h1>
+            </div>
+            <p>Prazo para responder: <strong>05/05/2025</strong></p>
+        </div>
+    </header>
+    <div class="tabela-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Sexo</th>
+                    <th>Curso</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-inscritos">
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="/src/utils/theme.ts"></script>
+    <script type="module" src="/src/listaInscritos.ts"></script>
+</body>
+</html>
