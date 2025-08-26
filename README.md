@@ -12,7 +12,7 @@ Este projeto permite que usuários se inscrevam em diversos cursos através de u
 ## 🚀 Funcionalidades
 
 - Formulário de inscrição com validação de campos obrigatórios
-- Validação robusta usando **Zod**
+- Validação dos dados utilizando **Zod**
 - Persistência dos dados via **json-server** (mock API REST)
 - Feedback visual de erros de validação em tempo real
 - Limpeza automática do formulário após envio
