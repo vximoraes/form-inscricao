@@ -5,11 +5,11 @@ Projeto acadêmico experimental que utiliza **Vite**, **TypeScript** e **json-se
 ![Imagem 1](/public/assets/images/Screenshot_1.png)
 ![Imagem 2](/public/assets/images/Screenshot_2.png)
 
-## 📖 Visão Geral
+## Visão Geral
 
 Este projeto permite que usuários se inscrevam em diversos cursos através de um formulário web moderno. Os dados são validados com **Zod** e enviados para uma API REST simulada pelo **json-server**. O frontend é construído com **Vite** e **TypeScript**, com layout responsivo e suporte a dark mode.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - Formulário de inscrição com validação de campos obrigatórios
 - Validação dos dados utilizando **Zod**
@@ -19,7 +19,7 @@ Este projeto permite que usuários se inscrevam em diversos cursos através de u
 - Dark mode
 - Estrutura modular: validação, API, UI helpers, limpeza de formulário
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **Vite**: bundler moderno e servidor de desenvolvimento
 - **TypeScript**: tipagem estática e recursos avançados de JS
@@ -27,13 +27,13 @@ Este projeto permite que usuários se inscrevam em diversos cursos através de u
 - **Zod**: validação de dados
 - **CSS**: estilos modulares
 
-## 📦 Pré-requisitos
+## Pré-requisitos
 
 - Node.js (v14 ou superior)
 - npm ou yarn
 - **json-server**: instale localmente com `npm install json-server`
 
-## ⚡️ Instalação e Execução
+## Instalação e Execução
 
 1. **Clonar o repositório**
 
